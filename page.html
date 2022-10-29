@@ -2,6 +2,15 @@
 <html>
     <head>
         <style>
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .flex-container > div {
+                margin: 10px;
+                font-size: 30px;
+            }
 
             .div1{
                 display: flex;
@@ -12,14 +21,15 @@
                 width: 100%;
             }
 
-
-            .flex-container {
+            .footer{
                 display: flex;
-                justify-content: space-between;
-            }
-            .flex-container > div {
+                justify-content: center;
+                border: 1px solid gray;
+                height: 250px;
+                width: 100%;
                 margin: 10px;
-                font-size: 30px;
+                position: absolute;
+                bottom: 0;
             }
 
         </style>
@@ -41,12 +51,12 @@
                 <p>Content</p>
             </div>
     </section>
-   
-     <footer>
-        <div id="footer">
-            <div>Footer</div>
+
+    <section>
+        <div class="footer">
+            <p>Footer</p>
         </div>
-     </footer>
+    </section>
 
    
 </body>
