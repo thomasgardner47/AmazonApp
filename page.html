@@ -3,35 +3,38 @@
     <head>
         <style>
 
-            #navigation #logo{
-                display: flex;
-                justify-content: flex-start;
-            }
-
-            #navigation #productLogin{
-                display: flex;
-                justify-content: flex-end;
-            }
-
             .div1{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100px;
+                height: 300px;
                 background: grey;
+                width: 100%;
             }
+
+
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+            }
+            .flex-container > div {
+                margin: 10px;
+                font-size: 30px;
+            }
+
         </style>
     </head>
 <body>
 
-    <section>
+    <Section>
         <nav>
-            <div id="navigation">
-                <div id="logo">Logo</div>
-                <div id="productLogin">ProductLogin</div>
+            <div class="flex-container">
+                <div>Logo</div>
+                <div>ProductLogin</div>
             </div>
         </nav>
-    </section>
+
+    </Section>
  
     <section>
             <div class="div1">
@@ -40,8 +43,10 @@
     </section>
    
      <footer>
-        Footer
-     </footer>    
+        <div id="footer">
+            <div>Footer</div>
+        </div>
+     </footer>
 
    
 </body>
